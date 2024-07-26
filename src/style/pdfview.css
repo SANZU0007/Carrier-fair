@@ -1,0 +1,189 @@
+.container {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the container */
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px; /* Space between image and data */
+  }
+  
+  .image {
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    height: auto;    /* Maintain aspect ratio */
+  }
+  
+  .details-container {
+    flex: 2;
+    max-width: 600px; /* Limit width of details */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  strong.strong-class {
+    display: inline-block;
+    width: 250px; /* Adjust width as needed */
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .details-container p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .details-container p:nth-of-type(even) {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .details-container p:nth-of-type(odd) {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .image-container {
+      padding-right: 0; /* Remove padding when stacked */
+      padding-bottom: 20px; /* Space below the image */
+    }
+  
+    .details-container {
+      max-width: 100%; /* Full width for smaller screens */
+    }
+  }
+  
+
+
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #515050;
+    border-bottom: 2px solid #444;
+  }
+  
+  .id-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .navbar Button {
+  
+  
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+ 
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .id-title {
+      margin-bottom: 10px;
+    }
+  }
+
+
+ 
+  .footer {
+    padding: 5px;
+    display: flex;
+ 
+    background-color: #f1f1f1; /* Adjust background color as needed */
+  }
+  
+  .btn-Class {
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background-color: #fdf1ff;
+    font-size: 11px;
+    margin: 0 5px; /* Space between buttons */
+  }
+  .span{
+    color: rgb(2, 110, 40);
+    font-weight: bold;
+  }
+  
+
+
+
+
+
+  /* Styling for the select box */
+.selection {
+    margin-left: 50px;
+    width: 100px;
+    border: 2px solid #ddd;
+    border-radius: 1px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+
+/* Styling for the reject button */
+.reject {
+     width: 100px;
+    color: white;
+    border: 1px solid rgb(255, 107, 107);
+    color:rgb(255, 100, 100);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* Styling for the approve button */
+.Aprove {
+    width: 100px;
+    background-color: #320257;
+    color: white;
+    border: none;
+    border-radius: 3px;
+ 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+

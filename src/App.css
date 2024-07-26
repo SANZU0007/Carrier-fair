@@ -1,0 +1,176 @@
+/* Common styles */
+#circuler {
+    position: absolute;
+    bottom: 1%;
+  }
+  .popup-container {
+    position: absolute;
+    left: 6%;
+    bottom: -95px;
+    cursor: pointer;
+    transform: translate(0, 0);
+  }
+  
+ 
+ 
+  #input-container {
+
+    position: absolute;
+   left: 5%;
+    right: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  
+  .custom-input {
+    width: 300px;
+     margin-left: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  
+    background-color: #ffffff;
+   
+  }
+  
+
+  
+  /* Scrollable container with horizontal scrolling */
+  .scroll-container {
+    border-radius: 5px;
+    max-height: 100px;
+    display: flex;
+    position: relative;
+    /* background-color: #ffffff; */
+    /* Add responsive styles */
+    overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+    white-space: nowrap; /* Prevent line breaks for child elements */
+  }
+  
+  .scroll-container img {
+    height: 50px;
+    width: 10%;
+  }
+  
+  .scroll-container img:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+
+
+/* Default styles for the button */
+#buttonComponents {
+  margin: 5px;
+  background-color: #0077ffdd;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  color: white;
+  height: 40px;
+  font-size: medium;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+
+
+
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .fly-image {
+ 
+  border-radius: 5%;
+  max-height: 3%;
+  max-width: 40%;
+  margin-bottom: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .fly-image {
+  
+
+
+  max-height: 10%;
+  max-width: 100%;
+  margin-bottom: 210%;
+  }
+}
+#buttonComponent1 {
+  background-color: #3d26f0; /* Background color set to a shade of blue (#257ADC) */
+  margin: 50px; /* Adds a margin of 50 pixels around the button */
+  border-radius: 5px; /* Applies a border-radius of 5 pixels, giving the button rounded corners */
+  border: none; /* Removes the border */
+  color: white; /* Sets the text color to white */
+  font-size: 100px;
+  padding: 5px;
+
+   /* Sets the font size to medium */
+}
+#textoverlays{
+  margin: 60px;
+}
+
+
+
+/* Your other global styles go here */
+
+
+/* Your other styles go here */
+.fly-images {
+  border-radius: 5%;
+  max-height: 2%;
+  max-width: 60%;
+  margin-bottom: 120%;
+}
+@media (max-width: 768px) {
+  .fly-images {
+    border-radius: 5%;
+    max-height: 2%;
+    max-width: 60%;
+    margin-bottom: 130%;
+  }
+}
+@media (max-width: 450px) {
+  .fly-images {
+    border-radius: 5%;
+    max-height: 7%;
+    max-width: 80%;
+    margin-bottom: 240%;
+  }
+}
+#Loadinganimations{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+
+
+#buttonComponent{
+ margin: 2px;
+  background-color: #257ADC;
+  border-radius: 5px;
+  border: none;
+  width: 80px;
+  color: white;
+   height: 40px;
+  /* font-size: medium; */
+  margin-right: 10px; /* Adjust as needed */
+}
