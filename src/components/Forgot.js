@@ -45,7 +45,7 @@ function Forgot() {
         setBtn("Verifying...");
         setEnable(true);
         try {
-            let addUser = await fetch("https://carrier-fair-backend.onrender.com/forgot", {
+            let addUser = await fetch("http://localhost:8095/forgot", {
                 method: "POST",
                 body: JSON.stringify(obj),
                 headers: {

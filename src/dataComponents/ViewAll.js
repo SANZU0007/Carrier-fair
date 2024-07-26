@@ -9,6 +9,7 @@ import { styled } from '@mui/material/styles';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Add } from '@mui/icons-material';
+import "../Styles/viewall.css"
 
 const PropertyCard = styled(Paper)(({ theme }) => ({
     display: 'flex',
@@ -17,13 +18,13 @@ const PropertyCard = styled(Paper)(({ theme }) => ({
     marginBottom: theme.spacing(2),
     boxShadow: theme.shadows[3],
     width: '100%',
-    maxWidth: 600,
+   
     alignItems: 'center',
     gap: theme.spacing(2),
     borderRadius: theme.shape.borderRadius,
     [theme.breakpoints.up('sm')]: {
-        flexDirection: 'column',
-        alignItems: 'flex-start',
+        flexDirection: 'row',
+      
     }
 }));
 
