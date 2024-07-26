@@ -77,34 +77,7 @@ function Home({ children }) {
             >
               View all
             </Button>
-            <TextField
-              variant="outlined"
-              placeholder="Search"
-              size="small"
-              sx={{
-                backgroundColor: 'white',
-                borderRadius: 1,
-                mr: 2,
-                width: '200px',
-                '& .MuiOutlinedInput-root': {
-                  borderRadius: 1,
-                },
-                '& .MuiInputBase-input': {
-                  paddingRight: '40px', // Add padding for the search icon
-                },
-              }}
-              InputProps={{
-                endAdornment: (
-                  <IconButton
-                    type="submit"
-                    aria-label="search"
-                    sx={{ p: '10px' }}
-                  >
-                    <SearchIcon />
-                  </IconButton>
-                ),
-              }}
-            />
+           
             <Button
               color="inherit"
               startIcon={<LogoutIcon />}
