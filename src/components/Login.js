@@ -55,7 +55,7 @@ function Login() {
     async function createUser(obj) {
         setBtn("Verifying...");
         try {
-            let addUser = await fetch("https://career-fair-server.onrender.com/login", {
+            let addUser = await fetch("https://carrier-fair-backend.onrender.com/login", {
                 method: "POST",
                 body: JSON.stringify(obj),
                 headers: {

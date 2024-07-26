@@ -88,7 +88,7 @@ function Edit() {
   async function updateProperty(obj) {
     try {
       setBtn("Updating...");
-      const result = await fetch(`https://career-fair-server.onrender.com/property/edit-property/${dataId}`, {
+      const result = await fetch(`https://carrier-fair-backend.onrender.com/property/edit-property/${dataId}`, {
         method: "POST",
         body: JSON.stringify(obj),
         headers: {

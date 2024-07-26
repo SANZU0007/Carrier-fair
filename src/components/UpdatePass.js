@@ -31,7 +31,7 @@ function UpdatePass() {
 
     useEffect(() => {
         async function verifyToken() {
-            let isValid = await fetch(`http://localhost:8095/token-verify/${id}/${token}`, {
+            let isValid = await fetch(`https://carrier-fair-backend.onrender.com/token-verify/${id}/${token}`, {
                 method: "GET",
                 headers: {
                     "Content-type": "application/json"

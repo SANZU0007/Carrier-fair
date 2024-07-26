@@ -51,7 +51,7 @@ function ViewAll() {
     useEffect(() => {
         async function getAll() {
             try {
-                const property = await fetch("https://career-fair-server.onrender.com/property/all", {
+                const property = await fetch("https://carrier-fair-backend.onrender.com/property/all", {
                     method: "GET",
                     headers: {
                         "auth-token": `${token}`,
@@ -77,7 +77,7 @@ function ViewAll() {
 
     const deleteData = async (id) => {
         try {
-            const response = await fetch(`https://career-fair-server.onrender.com/property/delete-property/${id}`, {
+            const response = await fetch(`https://carrier-fair-backend.onrender.com/property/delete-property/${id}`, {
                 method: "DELETE",
                 headers: {
                     "auth-token": `${token}`,
@@ -112,8 +112,26 @@ function ViewAll() {
                 <Typography variant="h4" gutterBottom>
                     All Properties
                 </Typography>
-                <Add color="inherit" onClick={() => navigate('/add')}>
-               </Add>
+                <IconButton
+      color="inherit"
+      onClick={() => navigate('/add')}
+      sx={{
+        position: 'fixed',
+        bottom: '16px',
+        right: '16px',
+        width: '56px',
+        height: '56px',
+        borderRadius: '50%',
+        backgroundColor: '#1877f2', // Blue color
+        color: 'white',
+        boxShadow: 3,
+        '&:hover': {
+          backgroundColor: '#0d47a1', // Darker blue on hover
+        },
+      }}
+    >
+      <Add />
+    </IconButton>
                 {loading ? (
                     <Box display="flex" justifyContent="center" alignItems="center">
                         <CircularProgress />
