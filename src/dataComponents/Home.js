@@ -20,9 +20,14 @@ function Home({ children }) {
             REAL ESTATE
           </Typography>
          
-          <Button color="inherit"  variant="outlined onClick={() => navigate('/all-property')}>
-            View all
-          </Button>
+ <Button 
+          sx={{ m:2}}
+  color="inherit" 
+  variant="outlined" 
+  onClick={() => navigate('/all-property')}
+>
+  View all
+</Button>
           <TextField
             variant="outlined"
             placeholder="Search"
