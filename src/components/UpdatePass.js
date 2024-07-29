@@ -65,7 +65,7 @@ function UpdatePass() {
         setBtn("Updating...");
         setEnable(true);
         try {
-            let addUser = await fetch(`https://career-fair-server.onrender.com/update-password/${id}`, {
+            let addUser = await fetch(`https://carrier-fair-backend.onrender.com/update-password/${id}`, {
                 method: "POST",
                 body: JSON.stringify(obj),
                 headers: {

@@ -51,7 +51,7 @@ function ViewAll() {
     useEffect(() => {
         async function getAll() {
             try {
-                const property = await fetch("https://career-fair-server.onrender.com/property/all", {
+                const property = await fetch("https://carrier-fair-backend.onrender.com/property/all", {
                     method: "GET",
                     headers: {
                         "auth-token": `${token}`,
@@ -77,7 +77,7 @@ function ViewAll() {
 
     const deleteData = async (id) => {
         try {
-            const response = await fetch(`https://career-fair-server.onrender.com/property/delete-property/${id}`, {
+            const response = await fetch(`https://carrier-fair-backend.onrender.com/property/delete-property/${id}`, {
                 method: "DELETE",
                 headers: {
                     "auth-token": `${token}`,
