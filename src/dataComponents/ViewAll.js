@@ -9,6 +9,8 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Add } from '@mui/icons-material';
 
+import "../dataComponents/ViewAll.css"
+
 const PropertyCard = styled(Paper)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'row',
@@ -112,7 +114,7 @@ function ViewAll() {
                 <Typography variant="h4" gutterBottom>
                     All Properties
                 </Typography>
-                <Add color="inherit" onClick={() => navigate('/add')}>
+                <Add  id='bottomicon' color="inherit" onClick={() => navigate('/add')}>
                </Add>
                 {loading ? (
                     <Box display="flex" justifyContent="center" alignItems="center">
