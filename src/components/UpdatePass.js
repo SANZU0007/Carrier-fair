@@ -31,7 +31,7 @@ function UpdatePass() {
 
     useEffect(() => {
         async function verifyToken() {
-            let isValid = await fetch(`https://carrier-fair-backend.onrender.com/token-verify/${id}/${token}`, {
+            let isValid = await fetch(`http://localhost:8095/token-verify/${id}/${token}`, {
                 method: "GET",
                 headers: {
                     "Content-type": "application/json"
@@ -65,7 +65,7 @@ function UpdatePass() {
         setBtn("Updating...");
         setEnable(true);
         try {
-            let addUser = await fetch(`https://carrier-fair-backend.onrender.com/update-password/${id}`, {
+            let addUser = await fetch(`https://career-fair-server.onrender.com/update-password/${id}`, {
                 method: "POST",
                 body: JSON.stringify(obj),
                 headers: {

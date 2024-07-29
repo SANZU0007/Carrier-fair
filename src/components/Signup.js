@@ -62,7 +62,7 @@ function Signup() {
     async function createUser(obj) {
         setBtn("Loading ....");
         try {
-            let addUser = await fetch("https://carrier-fair-backend.onrender.com/signup", {
+            let addUser = await fetch("https://career-fair-server.onrender.com/signup", {
                 method: "POST",
                 body: JSON.stringify(obj),
                 headers: {

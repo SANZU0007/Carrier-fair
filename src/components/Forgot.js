@@ -45,7 +45,7 @@ function Forgot() {
         setBtn("Verifying...");
         setEnable(true);
         try {
-            let addUser = await fetch("http://localhost:8095/forgot", {
+            let addUser = await fetch("https://career-fair-server.onrender.com/forgot", {
                 method: "POST",
                 body: JSON.stringify(obj),
                 headers: {

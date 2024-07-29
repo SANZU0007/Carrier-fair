@@ -76,7 +76,7 @@ function AddProperty() {
         setLoading(true);
         setBtn("Creating...");
         try {
-            let result = await fetch("https://carrier-fair-backend.onrender.com/property/add-property", {
+            let result = await fetch("https://career-fair-server.onrender.com/property/add-property", {
                 method: "POST",
                 body: JSON.stringify(obj),
                 headers: {
