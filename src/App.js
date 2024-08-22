@@ -11,6 +11,7 @@ import ViewAll from './dataComponents/ViewAll';
 import Edit from './dataComponents/Edit';
 import { createContext, useState } from 'react';
 export let myData = createContext();
+
 function App() {
   let [propertyData, setPropertyData] = useState([]);
   return (
