@@ -6,6 +6,8 @@ import add from "../images/signup.png";
 
 const LoginPaper = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(4),
+
+    
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
