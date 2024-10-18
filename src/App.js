@@ -14,6 +14,9 @@ export let myData = createContext();
 
 function App() {
   let [propertyData, setPropertyData] = useState([]);
+
+
+  
   return (
     <div className="App">
       <myData.Provider value={{ propertyData, setPropertyData }}>
